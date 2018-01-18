@@ -1,0 +1,79 @@
+/*navigation*/
+@media screen and (max-width:764px) {
+    .blank{
+        width:100%;
+        height:40px;
+    }
+    .navbar.navbar-default.topnav{
+        z-index: 2000;
+        position: fixed;
+        width:100%;
+        font-family: 'Montserrat', sans-serif;
+        height: 40px;
+        font-size: 15px;
+        background: white;
+        margin-bottom: 5px;
+
+    }
+
+    .navbar-brand {
+        margin-left: 5px;
+        margin-top: 7px;
+        width: 197px;
+        height: 40px;
+        background: url('http://chuantu.biz/t6/191/1514647794x-1566674385.png') no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .navbar-collapse {
+        background-color: #FAFAFA;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width:764px) {
+
+    .blank{
+        width:100%;
+        height:65px;
+    }
+    .navbar.navbar-default.topnav{
+        z-index: 2000;
+        position: fixed;
+        width:100%;
+        font-family: 'Roboto', sans-serif;
+        height:65px;
+        font-size: 23px;
+        background:white;
+        border-bottom: 0 outset rgba(192, 192, 192, 0);
+
+    }
+
+    .navbar-brand {
+        margin-top:10px;
+        width:310px;
+        background: url('http://chuantu.biz/t6/191/1514647794x-1566674385.png') no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .navbar-collapse{
+        background-color: white;
+        min-width:780px;
+        margin: 0 auto;
+    }
+}
+
+.navbar-right{
+    padding-top:10px;
+}
+
+.navbar-nav > li{
+    padding-left:26px;
+    padding-right:25px;
+}
+
+.topnav ul.navbar-nav li a {
+    color:black;
+}
+
+

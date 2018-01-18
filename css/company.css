@@ -1,0 +1,157 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+
+}
+@media screen and (min-width:764px) {
+    .background {
+        height: 100%;
+        background: rgba(0, 0, 0, 0.25);
+    }
+
+    div header {
+        width: 100%;
+        height: 550px;
+    }
+
+    .div-first {
+        background: url("../images/office.jpg") no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: auto;
+    }
+
+    .header-font {
+        padding-left: 20%;
+        padding-right: 20%;
+        color: white;
+        font-size: 17px;
+        font-family: 'Montserrat', sans-serif;
+
+    }
+
+    .header-title {
+        padding-left: 30%;
+        padding-top: 10%;
+        padding-right: 20%;
+
+        font-size: 65px;
+        color: white;
+
+    }
+
+    video {
+        padding-left: 20%;
+        margin-top: 150px;
+        padding-right: 20%;
+        height: 240px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        z-index: -1;
+        position: relative;
+    }
+
+    .section1 {
+        padding-top: 10px;
+        text-align: center;
+        width: 100%;
+
+    }
+}
+
+@media screen and  (max-width: 764px) {
+    div header {
+        width: 100%;
+        height: auto;
+        padding-bottom: 20%;
+
+    }
+
+    .header-font {
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-bottom: 5%;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+    }
+
+    .header-title {
+        padding-left: 20%;
+        padding-top: 85px;
+        padding-right: 20%;
+        font-size: 35px;
+        color: white;
+        display: block;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        z-index: -1;
+        position: relative;
+    }
+
+    .section1 {
+        padding-top: 20px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .navbar-brand {
+        width: 195px;
+    }
+
+    .background {
+        height: 100%;
+        background: rgba(0, 0, 0, 0.25);
+    }
+
+    .div-first {
+        width: 100%;
+        height: auto;
+        background: url('../images/office.jpg') no-repeat;
+        background-size: cover;
+    }
+
+}
+
+
+
+
+
+.a {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.b {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.row {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.col-md-4.col-md-offset-1.col-sm-12 h2 {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.col-md-4.col-md-offset-1.col-sm-12 {
+    padding-top: 5%;
+}
+
+.section1 p {
+    padding-top: 5%;
+}
+
+
+.picture-font{
+    font-family: 'Montserrat', sans-serif;
+}

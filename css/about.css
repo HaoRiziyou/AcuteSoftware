@@ -1,0 +1,63 @@
+/* Always set the map height explicitly to define the size of the div
+     * element that contains the map. */
+#map {
+    height: 55%;
+    width: 100%;
+    z-index: 0;
+    position: relative;
+
+}
+
+/* Optional: Makes the sample page fill the window. */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+@media screen and (max-width: 764px)  {
+
+    .placeholder {
+        height: 650px;
+        padding-left: 5%;
+        padding-right: 5%;
+        /*background: linear-gradient(to bottom, #669999 0%, #ccffff 100%)*/
+        background-color: #FAFAFA;
+        padding-top: 15px;
+
+
+    }
+
+    h3{
+        font-family: 'Montserrat', sans-serif;
+    }
+
+}
+
+
+@media screen and (min-width: 764px){
+    .placeholder {
+        height: 700px;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 20px;
+        background-color: #FAFAFA;
+
+    }
+
+    h3{
+        font-family: 'Montserrat', sans-serif;
+    }
+
+}
+
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+p{
+    font-family: 'Montserrat', sans-serif;
+}

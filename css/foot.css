@@ -1,0 +1,31 @@
+footer {
+    width: 100%;
+    height:auto;
+    background-color: #FAFAFA;
+    opacity: 0.8;
+
+
+}
+
+footer .items{
+    padding-top: 15px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+footer .items a{
+    color:black;
+    padding:20px 0;
+}
+
+@media(min-width:500px) {
+    footer .container {
+        padding: 0 150px;
+    }
+}
+.copyright {
+    text-align: center;
+    padding-bottom: 20px;
+    opacity: 0.4;
+    font-family: 'Montserrat', sans-serif;
+}

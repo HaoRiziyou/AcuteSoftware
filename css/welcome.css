@@ -1,0 +1,148 @@
+#hcover{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:white;
+    display:block;
+    z-index:10000;
+    align-items: center;
+}
+
+#hcover .logo{
+   position:absolute;
+    top:30%;
+    width:100%;
+    height: 200px;
+    text-align: center;
+
+}
+
+#hcover .welcome{
+    -webkit-animation-name: load; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-fill-mode:forwards;/* Safari 4.0 - 8.0 */
+    -webkit-animation-direction:alternate;/* Safari 4.0 - 8.0 */
+    animation-name: load;
+    animation-duration: 1.5s;
+    animation-delay:2s ;
+    animation-direction:alternate;
+    animation-fill-mode:forwards;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes load {
+  from{opacity:1}
+    to{opacity: 0}
+
+}
+
+.spinner {
+    margin: 17% auto 50px auto;
+    width: 50px;
+    height: 60px;
+    position: relative;
+    text-align: center;
+    font-size: 10px;
+}
+
+.spinner > div {
+    background-color: rgb(52,152,219);
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+    -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+    animation: stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+}
+
+@-webkit-keyframes stretchdelay {
+    0%, 40%, 100% { -webkit-transform: scaleY(0.4) }
+    20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes stretchdelay {
+    0%, 40%, 100% {
+        transform: scaleY(0.4);
+        -webkit-transform: scaleY(0.4);
+    }  20% {
+           transform: scaleY(1.0);
+           -webkit-transform: scaleY(1.0);
+       }
+}
+
+.welcome-text{
+    text-align: center;
+}
+
+.welcome-text h1{
+    font-weight: bold;
+    font-size: 50px;
+    color: rgb(52,152,219);
+}
+
+.logo-animation{
+    left: 30%;
+    opacity: 0;
+    width: 40%;
+    height:auto;
+    position: relative;
+    -webkit-animation-name: zoomIn; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-fill-mode:forwards;/* Safari 4.0 - 8.0 */
+    animation-name: zoomIn;
+    animation-duration: 2s;
+    animation-delay:3s ;
+    animation-fill-mode:forwards;
+
+}
+
+.logo-animation img{
+    height:auto;
+    width:100%;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale3d(.3, .3, .3);
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+/* Standard syntax */
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale3d(.3, .3, .3);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
