@@ -15,9 +15,10 @@ $lang = 'en';
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <!-- /.font reference -->
     <!-- bootstrap reference -->
+    <link rel='stylesheet prefetch' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
     <link rel='stylesheet ' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-    <script  src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-    <script  src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
     <!-- /.bootstrap -->
     <!-- css reference -->
     <link rel="stylesheet" href="css/navbar.css">
@@ -25,6 +26,7 @@ $lang = 'en';
     <link rel="stylesheet" href="css/foot.css">
     <!-- /.css -->
     <!-- Logo in website tab/bookmark -->
+    <link rel='stylesheet prefetch' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
     <link rel="bookmark" type="image/x-icon" href="images/favicon.ico"/>
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="icon" href="images/favicon.ico">
@@ -47,8 +49,10 @@ $lang = 'en';
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="home.html"><div class="topnav navbar-brand">
-            </div></a>
+            <a href="home.html">
+                <div class="topnav navbar-brand">
+                </div>
+            </a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="target-menu">
@@ -56,8 +60,8 @@ $lang = 'en';
                 <li>
                     <a href="home.html">Home</a>
                 </li>
-                <li >
-                    <a  href="company.html">Company</a>
+                <li>
+                    <a href="company.html">Company</a>
                 </li>
                 <li class="active">
                     <a href="contact.html">Contact</a>
@@ -72,17 +76,18 @@ $lang = 'en';
 
 
 <!-- picture front contact message form-->
-<div >
+<div>
     <img class="picture-area" src="images/contact.png">
 </div>
 <!-- /.picture -->
 
 <!--text area-->
-<div class="header" >
+<div class="header">
     <h1>GET IN TOUCH</h1>
 </div>
 <div class="information">
-    <p>We’re happy to hear from you. Contact us today to learn more about our business and how you can benefit from working with us. </p>
+    <p>We’re happy to hear from you. Contact us today to learn more about our business and how you can benefit from
+        working with us. </p>
 </div>
 <!-- /.text area-->
 <!-- message form area-->
@@ -91,14 +96,17 @@ $lang = 'en';
         <!-- Name filling area. Must be filled and should meet the request of containing nothing but letters -->
         <div class="row">
             <div class="col">
-                <input type="text" placeholder="Name*:" name="name" pattern="^([a-zA-Z]+[,.]?[ ]?|[a-zA-Z]+['-]?)+$"  title="Firstname and lastname should only contain letters. e.g. John Smith"  required>
+                <input type="text" placeholder="Name*:" name="name" pattern="^([a-zA-Z]+[,.]?[ ]?|[a-zA-Z]+['-]?)+$"
+                       title="Firstname and lastname should only contain letters. e.g. John Smith" required>
             </div>
         </div>
         <!-- /.Name filling area -->
         <!-- Email address filling area. Must be filled and should meet the request pattern="^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+$"-->
         <div class="row">
             <div class="col">
-                <input type="text" placeholder="Email address*: " name="email"  pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,8})$" title="Email should follow certain format. e.g. someone@example.com" required>
+                <input type="text" placeholder="Email address*: " name="email"
+                       pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,8})$"
+                       title="Email should follow certain format. e.g. someone@example.com" required>
             </div>
         </div>
         <!-- /.Email filling area -->
@@ -112,7 +120,8 @@ $lang = 'en';
         <!-- Email message filling area. -->
         <div class="row">
             <div class="col">
-                <textarea id="message" name="message" placeholder="Write message:" style="height:200px" required></textarea>
+                <textarea id="message" name="message" placeholder="Write message:" style="height:200px"
+                          required></textarea>
             </div>
         </div>
         <!-- /.Email message filling area -->
@@ -120,7 +129,7 @@ $lang = 'en';
         <div class="row">
             <div class="col">
                 <div class="validation-area">
-                      <div class="g-recaptcha" data-sitekey="6Lciyz8UAAAAALUwQ6ihfWitUNJ_KhHH1Um0OH4Q"></div>
+                    <div class="g-recaptcha" data-sitekey="6Lciyz8UAAAAALUwQ6ihfWitUNJ_KhHH1Um0OH4Q"></div>
                 </div>
             </div>
         </div>
@@ -138,10 +147,10 @@ $lang = 'en';
 <footer>
     <div class="items">
         <div class="container">
-            <div class="row" >
+            <div class="row">
                 <!-- Display three elements equally. Later if there are more elements in footer, "col-md-x" can be adjusted.-->
                 <div class="col-md-4 col-sm-4 col-xs-4">
-                    <a href="../../Desktop/IP%20program/AcuteSoftwareEngineering/about.html"><span class="ion-android-pin"> </span> About</a>
+                    <a href="about.html"><span class="ion-android-pin"> </span> About</a>
                 </div>
                 <div class="col-md-4 col-sm-4 col-xs-4">
                     <a><span class="ion-social-twitter"> </span> Twitter</a>

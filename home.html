@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <title>Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel='stylesheet prefetch'
+          href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
     <link rel='stylesheet prefetch' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/foot.css">
     <link rel="stylesheet" href="css/navbar.css">
 
     <!-- Logo in website tab/bookmark -->
+    <link rel='stylesheet prefetch' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
     <link rel="bookmark" type="image/x-icon" href="images/favicon.ico"/>
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="icon" href="images/favicon.ico">
@@ -22,235 +24,240 @@
 
 <body>
 
-   <!-- Navigation -->
-    <nav class="navbar navbar-default topnav" role="navigation">
-        <div class="container topnav">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#target-menu">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="home.html"><div class="topnav navbar-brand">
-                </div></a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="target-menu">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active">
-                        <a href="home.html" >Home</a>
-                    </li>
-                    <li>
-                        <a href="company.html">Company</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+<!-- Navigation -->
+<nav class="navbar navbar-default topnav" role="navigation">
+    <div class="container topnav">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#target-menu">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="home.html">
+                <div class="topnav navbar-brand">
+                </div>
+            </a>
         </div>
-        <!-- /.container -->
-    </nav>
-   <div class="blank"></div>
- <!-- /.Navigation -->
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="target-menu">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active">
+                    <a href="home.html">Home</a>
+                </li>
+                <li>
+                    <a href="company.html">Company</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<div class="blank"></div>
+<!-- /.Navigation -->
 
-    <div class="home1">
-     <div class="bg-overlay1">
-      <div class="content-box">
-        <div class="content">
-          <div class="title">
-          <h1>CROSS COMPILER</h1>
-          </div>
-          <div class="text">
-            <p>Welcome.<br>We're Acute software engineering, and we're disrupting<br> the industry with our groundbreaking solutions and business ideas.<span class="hidden-xs"><br>Our technology has already been recognized by market leaders and our scalable<br>business model is setting the trend for industry standards.</span><br>Curious to find out more?</p>
-          </div>
+<div class="home1">
+    <div class="bg-overlay1">
+        <div class="content-box">
+            <div class="content">
+                <div class="title">
+                    <h1>CROSS COMPILER</h1>
+                </div>
+                <div class="text">
+                    <p>Welcome.<br>We're Acute software engineering, and we're disrupting<br> the industry with our
+                        groundbreaking solutions and business ideas.<span class="hidden-xs"><br>Our technology has already been recognized by market leaders and our scalable<br>business model is setting the trend for industry standards.</span><br>Curious
+                        to find out more?</p>
+                </div>
+            </div>
         </div>
-      </div>
-     </div>
+    </div>
+</div>
+
+<!-- product-gallery -->
+<a name="gallery"></a>
+<section id="dg-container" class="dg-container hidden-xs hidden-sm">
+    <div class="dg-wrapper">
+        <a href="#product1" class="picture1"></a>
+        <a href="#product2" class="picture2"></a>
+        <a class="more-pictures"></a>
+    </div>
+    <nav>
+        <span class="dg-prev"><a class="ion-chevron-left"></a></span>
+        <span class="dg-next"><a class="ion-chevron-right"></a></span>
+    </nav>
+
+</section>
+
+<section id="small-gallery" class="small-gallery visible-sm visible-xs">
+    <div id="myCarousel" class="carousel slide">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active">
+                <a href="#product1"> <img src="images/product1.png" alt="First slide"></a>
+            </div>
+            <div class="item">
+                <a href="#product2"><img src="images/product2.png" alt="Second slide"></a>
+            </div>
+            <div class="item">
+                <img src="images/more.png" alt="Third slide">
+            </div>
+        </div>
+        <a class="carousel-control left" href="#myCarousel"
+           data-slide="prev">&lsaquo;
+        </a>
+        <a class="carousel-control right" href="#myCarousel"
+           data-slide="next">&rsaquo;
+        </a>
+    </div>
+</section>
+<!-- /.product-gallery -->
+
+<!-- product1 -->
+<a name="product1"></a>
+<section id="product1" class="product">
+    <div class="head">
+        <h1>This is product1</h1>
+    </div>
+    <div class="big-pictures hidden-xs">
+        <a href="#product1" onClick="document.getElementById('mcover').style.display='block';"><img
+                src="images/productPictures.png"></a>
+    </div>
+    <div class="small-pictures visible-xs">
+        <div class="container">
+            <div class="row">
+                <div class="picture-box col-xs-6">
+                    <img src="images/productPictures.png">
+                </div>
+                <div class="picture-box col-xs-6">
+                    <img src="images/productPictures.png">
+                </div>
+                <div class="picture-box col-xs-6">
+                    <img src="images/productPictures.png">
+                </div>
+                <div class="picture-box col-xs-6">
+                    <img src="images/productPictures.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <span>This is product description. Use this space to describe this product in more detail.</span>
+    </div>
+    <div class="return">
+        <a class="ion-chevron-up" href="#gallery"></a>
+    </div>
+</section>
+<!-- /.product1 -->
+
+<div class="separate-line"></div>
+
+<!-- product2 -->
+<a name="product2"></a>
+<section id="product2" class="product">
+    <div class="head">
+        <h1>This is product2</h1>
+    </div>
+    <div class="big-pictures hidden-xs">
+        <a href="#product2" onClick="document.getElementById('mcover').style.display='block';"><img
+                src="images/productPictures.png"></a>
+    </div>
+    <div class="small-pictures visible-xs">
+        <div class="container">
+            <div class="row">
+                <div class="picture-box col-xs-6">
+                    <a><img src="images/productPictures.png"></a>
+                </div>
+                <div class="picture-box col-xs-6">
+                    <a><img src="images/productPictures.png"></a>
+                </div>
+                <div class="picture-box col-xs-6">
+                    <a><img src="images/productPictures.png"></a>
+                </div>
+                <div class="picture-box col-xs-6">
+                    <a><img src="images/productPictures.png"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <span>This is product description. Use this space to describe this product in more detail.</span>
+    </div>
+    <div class="return">
+        <a class="ion-chevron-up" href="#gallery"></a>
     </div>
 
-   <!-- product-gallery -->
-   <a  name="gallery"></a>
-   <section id="dg-container" class="dg-container hidden-xs hidden-sm">
-       <div class="dg-wrapper">
-           <a href="#product1" class="picture1"></a>
-           <a href="#product2" class="picture2"></a>
-           <a class="more-pictures"></a>
-       </div>
-       <nav>
-           <span class="dg-prev"><a class="ion-chevron-left"></a></span>
-           <span class="dg-next"><a class="ion-chevron-right"></a></span>
-       </nav>
+</section>
 
-   </section>
+<!-- /.product2 -->
 
-   <section id="small-gallery" class="small-gallery visible-sm visible-xs">
-       <div id="myCarousel" class="carousel slide">
-           <ol class="carousel-indicators">
-               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-               <li data-target="#myCarousel" data-slide-to="1"></li>
-               <li data-target="#myCarousel" data-slide-to="2"></li>
-           </ol>
-           <div class="carousel-inner">
-               <div class="item active">
-                   <a href="#product1"> <img src="images/product1.png" alt="First slide"></a>
-               </div>
-               <div class="item">
-                   <a href="#product2"><img src="images/product2.png" alt="Second slide"></a>
-               </div>
-               <div class="item">
-                   <img src="images/more.png" alt="Third slide">
-               </div>
-           </div>
-           <a class="carousel-control left" href="#myCarousel"
-              data-slide="prev">&lsaquo;
-           </a>
-           <a class="carousel-control right" href="#myCarousel"
-              data-slide="next">&rsaquo;
-           </a>
-       </div>
-   </section>
-   <!-- /.product-gallery -->
+<!-- product detail-->
+<div id="mcover">
+    <div class="slider-ctr">
+        <figure class="product-slide"><img src="images/img1.jpeg" alt="River"/>
+        </figure>
+        <figure class="product-slide"><img src="images/img2.jpeg" alt="Rain"/>
+        </figure>
+        <figure class="product-slide "><img src="images/img4.jpeg" alt="Ocean"/>
+        </figure>
+        <figure class="product-slide text-on"><img src="images/productPictures.png" alt="Sky"/>
+        </figure>
+        <div class="slider-control">
+            <div class="control prev disabled">
+                <div class="icon ion-chevron-left"></div>
+            </div>
+            <div class="control next">
+                <div class="icon ion-chevron-right"></div>
+            </div>
+        </div>
+    </div>
+    <div class="close-button">
+        <a class="ion-close-circled" onclick="document.getElementById('mcover').style.display=''"></a>
+    </div>
+</div>
+<!-- /.product detail-->
 
-   <!-- product1 -->
-   <a  name="product1"></a>
-   <section id="product1" class="product">
-       <div class="head">
-       <h1>This is product1</h1>
-       </div>
-       <div class="big-pictures hidden-xs">
-           <a href="#product1" onClick="document.getElementById('mcover').style.display='block';"><img src="../../Desktop/IP%20program/AcuteSoftwareEngineering/images/productPictures.png" ></a>
-       </div>
-       <div class="small-pictures visible-xs">
-           <div class="container">
-           <div class="row">
-               <div class="picture-box col-xs-6">
-                   <img src="images/productPictures.png">
-               </div>
-               <div class="picture-box col-xs-6">
-                   <img src="images/productPictures.png">
-               </div>
-               <div class="picture-box col-xs-6">
-                   <img src="images/productPictures.png">
-               </div>
-               <div class="picture-box col-xs-6">
-                   <img src="images/productPictures.png">
-               </div>
-           </div>
-           </div>
-       </div>
-       <div class="content">
-          <span>This is product description. Use this space to describe this product in more detail.</span>
-       </div>
-       <div class="return">
-           <a class="ion-chevron-up" href="#gallery"></a>
-       </div>
-   </section>
-   <!-- /.product1 -->
+<!-- footer(about/Twitter page/Facebook page) -->
+<footer>
+    <div class="items">
+        <div class="container">
+            <div class="row">
+                <!-- Display three elements equally. Later if there are more elements in footer, "col-md-x" can be adjusted.-->
+                <div class="col-md-4 col-sm-4 col-xs-4">
+                    <a href="about.html"><span class="ion-android-pin"> </span> About</a>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-4">
+                    <a><span class="ion-social-twitter"> </span> Twitter</a>
+                    <!-- <a href="Your Twitter page link">Twitter</a> -->
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-4">
+                    <a><span class="ion-social-facebook"> </span> Facebook</a>
+                    <!-- <a href="Your Facebook page link">Facebook</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="">
+        <p class="copyright">Copyright © 2018 Acute Software Engineering Company. All rights reserved.</p>
+    </div>
+</footer>
+<!-- /.footer -->
 
-   <div class="separate-line"></div>
+<script src="js/modernizr.custom.53451.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script type="text/javascript" src="../../Desktop/IP%20program/AcuteSoftwareEngineering/js/jquery.gallery.js"></script>
+<script src="js/smoothly-jump.js"></script>
+<script src="js/home.js"></script>
 
-   <!-- product2 -->
-   <a  name="product2"></a>
-   <section id="product2" class="product">
-       <div class="head">
-           <h1>This is product2</h1>
-       </div>
-       <div class="big-pictures hidden-xs">
-           <a href="#product2" onClick="document.getElementById('mcover').style.display='block';"><img src="images/productPictures.png" ></a>
-       </div>
-       <div class="small-pictures visible-xs">
-           <div class="container">
-           <div class="row">
-               <div class="picture-box col-xs-6">
-                   <a><img src="images/productPictures.png"></a>
-               </div>
-               <div class="picture-box col-xs-6">
-                   <a><img src="images/productPictures.png"></a>
-               </div>
-               <div class="picture-box col-xs-6">
-                   <a><img src="images/productPictures.png"></a>
-               </div>
-               <div class="picture-box col-xs-6">
-                   <a><img src="images/productPictures.png"></a>
-               </div>
-           </div>
-           </div>
-       </div>
-       <div class="content">
-           <span>This is product description. Use this space to describe this product in more detail.</span>
-       </div>
-       <div class="return">
-           <a class="ion-chevron-up" href="#gallery"></a>
-       </div>
-
-   </section>
-
-   <!-- /.product2 -->
-
-   <!-- product detail-->
-   <div id="mcover">
-       <div class="slider-ctr">
-           <figure class="product-slide"><img src="images/img1.jpeg" alt="River"/>
-           </figure>
-           <figure class="product-slide"><img src="images/img2.jpeg" alt="Rain"/>
-           </figure>
-           <figure class="product-slide "><img src="images/img4.jpeg" alt="Ocean"/>
-           </figure>
-           <figure class="product-slide text-on"><img src="images/productPictures.png" alt="Sky"/>
-           </figure>
-           <div class="slider-control">
-               <div class="control prev disabled">
-                   <div class="icon ion-chevron-left"></div>
-               </div>
-               <div class="control next">
-                   <div class="icon ion-chevron-right"></div>
-               </div>
-           </div>
-       </div>
-       <div class="close-button">
-           <a class="ion-close-circled" onclick="document.getElementById('mcover').style.display=''"></a>
-       </div>
-   </div>
-   <!-- /.product detail-->
-
-   <!-- footer(about/Twitter page/Facebook page) -->
-   <footer>
-       <div class="items">
-           <div class="container">
-               <div class="row" >
-                   <!-- Display three elements equally. Later if there are more elements in footer, "col-md-x" can be adjusted.-->
-                   <div class="col-md-4 col-sm-4 col-xs-4">
-                       <a href="../../Desktop/IP%20program/AcuteSoftwareEngineering/about.html"><span class="ion-android-pin"> </span> About</a>
-                   </div>
-                   <div class="col-md-4 col-sm-4 col-xs-4">
-                       <a><span class="ion-social-twitter"> </span> Twitter</a>
-                       <!-- <a href="Your Twitter page link">Twitter</a> -->
-                   </div>
-                   <div class="col-md-4 col-sm-4 col-xs-4">
-                       <a><span class="ion-social-facebook"> </span> Facebook</a>
-                       <!-- <a href="Your Facebook page link">Facebook</a> -->
-                   </div>
-               </div>
-           </div>
-       </div>
-       <div class="">
-           <p class="copyright">Copyright © 2018 Acute Software Engineering Company. All rights reserved.</p>
-       </div>
-   </footer>
-   <!-- /.footer -->
-
-   <script  src="../../Desktop/IP%20program/AcuteSoftwareEngineering/js/modernizr.custom.53451.js"></script>
-   <script  src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-   <script  src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
-   <script type="text/javascript" src="../../Desktop/IP%20program/AcuteSoftwareEngineering/js/jquery.gallery.js"></script>
-   <script  src="../../Desktop/IP%20program/AcuteSoftwareEngineering/js/smoothly-jump.js"></script>
-   <script  src="../../Desktop/IP%20program/AcuteSoftwareEngineering/js/home.js"></script>
-
-  
 
 </body>
 
