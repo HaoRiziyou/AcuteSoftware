@@ -14,11 +14,14 @@ footer .items{
 }
 
 footer .items a{
-    color:black;
-    padding:20px 0;
+    color: #333333;
 }
 
-@media(min-width:500px) {
+footer .items span{
+    color:dimgrey;
+}
+
+@media(min-width:600px) {
     footer .container {
         padding: 0 150px;
     }
