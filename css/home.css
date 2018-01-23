@@ -17,8 +17,8 @@ html {
 
     .home1{
         width:100%;
-        height:55%;
-        background: url('../images/background.jpg') no-repeat;
+        height:67%;
+        background: url('http://chuantu.biz/t6/193/1514845651x-1566674331.png') no-repeat;
         background-size:cover;
     }
     .content-box{
@@ -36,7 +36,7 @@ html {
     }
     .home1{
         width:100%;
-        height:82%;
+        height:83%;
         background-image: url('../images/background.jpg');
         background-size:cover;
     }
@@ -99,6 +99,7 @@ html {
     position: absolute;
     left: 0;
     top: 0;
+    /*background: transparent url(../images/browser.png) no-repeat center;*/
     box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
 
@@ -142,6 +143,7 @@ html {
         position: absolute;
         left: 0;
         top: 0;
+        /*background: transparent url(../images/browser.png) no-repeat center;*/
         box-shadow: 0 10px 20px rgba(0,0,0,0.3);
     }
 
@@ -267,6 +269,8 @@ html {
         z-index:4000;
         align-items: center;
     }
+
+
 
     .slider-ctr {
         width: 700px;

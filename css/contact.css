@@ -64,6 +64,17 @@ input[type=submit]:hover {
     background-color: #45a049;
 }
 
+.hint{
+    width: 100%;
+    padding: 12px 20px;
+    text-align: center;
+
+}
+
+.hint p{
+    font-size: 15px;
+}
+
 .container-email {
     border-radius: 5px;
     background-color: #f2f2f2;

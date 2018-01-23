@@ -1,5 +1,5 @@
 var map;
-// use google map api to make a map
+
 function initMap() {
     var myLatLng = {lat: 53.83, lng: 10.69};
     map = new google.maps.Map(document.getElementById('map'), {

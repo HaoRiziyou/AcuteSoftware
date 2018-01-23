@@ -92,7 +92,7 @@ $lang = 'en';
 <!-- /.text area-->
 <!-- message form area-->
 <div class="container-email">
-    <form action="action_page.php" method="post">
+    <form action="action_page.php" method="post" onsubmit="return wait()">
         <!-- Name filling area. Must be filled and should meet the request of containing nothing but letters -->
         <div class="row">
             <div class="col">
@@ -135,8 +135,8 @@ $lang = 'en';
         </div>
         <!-- Submit button -->
         <div class="row">
-            <div class="col">
-                <input name="Submit" type="submit" value="Submit">
+            <div class="col" id="submit-parent">
+                <input name="Submit" type="submit" id="submit" value="Submit">
             </div>
         </div>
         <!-- /.Submit button -->
@@ -168,5 +168,12 @@ $lang = 'en';
     </div>
 </footer>
 <!-- /.footer -->
+<script>
+    function wait() {
+        $("#submit").remove();
+        $("#submit-parent").append("<div class='hint'><p>Email is Sending... Please wait a moment...</p></div>");
+        return true;
+    }
+</script>
 </body>
 </html>
