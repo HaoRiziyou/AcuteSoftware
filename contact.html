@@ -27,9 +27,9 @@ $lang = 'en';
     <!-- /.css -->
     <!-- Logo in website tab/bookmark -->
     <link rel='stylesheet prefetch' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
-    <link rel="bookmark" type="image/x-icon" href="images/favicon.ico"/>
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="bookmark" type="image/x-icon" href="../../Desktop/IP%20program/AcuteSoftwareEngineering/images/favicon.ico"/>
+    <link rel="shortcut icon" href="../../Desktop/IP%20program/AcuteSoftwareEngineering/images/favicon.ico">
+    <link rel="icon" href="../../Desktop/IP%20program/AcuteSoftwareEngineering/images/favicon.ico">
     <!-- /.Logo -->
     <!-- "I am not a robot" recaptcha -->
     <script src='https://www.google.com/recaptcha/api.js'></script>
@@ -77,7 +77,7 @@ $lang = 'en';
 
 <!-- picture front contact message form-->
 <div>
-    <img class="picture-area" src="images/contact.png">
+    <img class="picture-area" src="../../Desktop/IP%20program/AcuteSoftwareEngineering/images/contact.png">
 </div>
 <!-- /.picture -->
 
@@ -92,7 +92,7 @@ $lang = 'en';
 <!-- /.text area-->
 <!-- message form area-->
 <div class="container-email">
-    <form action="action_page.php" method="post" onsubmit="return wait()">
+    <form action="action_page.php" method="post">
         <!-- Name filling area. Must be filled and should meet the request of containing nothing but letters -->
         <div class="row">
             <div class="col">
@@ -135,8 +135,8 @@ $lang = 'en';
         </div>
         <!-- Submit button -->
         <div class="row">
-            <div class="col" id="submit-parent">
-                <input name="Submit" type="submit" id="submit" value="Submit">
+            <div class="col">
+                <input name="Submit" type="submit" value="Submit">
             </div>
         </div>
         <!-- /.Submit button -->
@@ -169,11 +169,4 @@ $lang = 'en';
 </footer>
 <!-- /.footer -->
 </body>
-<script>
-    function wait() {
-        $("#submit").remove();
-        $("#submit-parent").append("<div class='hint'><p>Email is sending, wait please.....</p></div>");
-        return true;
-    }
-</script>
 </html>

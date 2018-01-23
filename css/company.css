@@ -4,7 +4,6 @@ html {
     height: 100%;
 
 }
-/* Responsive layout - when the screen is large than 764px */
 @media screen and (min-width:764px) {
     .background {
         height: 100%;
@@ -63,7 +62,7 @@ html {
 
     }
 }
-/* Responsive layout - when the screen is less than 764px */
+
 @media screen and  (max-width: 764px) {
     div header {
         width: 100%;
