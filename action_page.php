@@ -12,7 +12,6 @@ $_SESSION['Subject']=$Subject;
 $_SESSION['Message']=$Message;
 
 //This is the part validate g-recapcha. If not a robot->return true
-if(isset($_POST['Submit'])){
     function CheckCaptcha($usrResponse){
         $fields_string = '';
         $fields = array(
@@ -33,7 +32,7 @@ if(isset($_POST['Submit'])){
         curl_close($ch);
         return json_decode($res,true);
     }
-}
+
 
 $result = CheckCaptcha($_POST['g-recaptcha-response']);
 
