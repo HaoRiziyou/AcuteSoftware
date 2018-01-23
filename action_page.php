@@ -3,31 +3,32 @@
 $Name = $_POST['name'];
 $Email = $_POST['email'];
 $Subject = $_POST['subject'];
-$Message=$_POST['message'];
+$Message = $_POST['message'];
 
 //This is the part validate g-recapcha. If not a robot->pass CheckCaptcha->return true
-function CheckCaptcha($usrResponse){
+function CheckCaptcha($usrResponse)
+{
     $fields_string = '';
     $fields = array(
         'secret' => "6Lciyz8UAAAAAA1J17LeTFSDJ4-QYiutHURnwQ2i",
         'response' => $usrResponse
     );
-    foreach($fields as $key => $value)
+    foreach ($fields as $key => $value)
         $fields_string .= $key . '=' . $value . '&';
-        $fields_string = rtrim($fields_string,'&');
-        $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL,'https://www.google.com/recaptcha/api/siteverify');
-        curl_setopt($ch,CURLOPT_POST,count($fields));
-        curl_setopt($ch,CURLOPT_POSTFIELDS,$fields_string);
-        curl_setopt($ch,CURLOPT_RETURNTRANSFER,True);
-        $res = curl_exec($ch);
-        curl_close($ch);
-        return json_decode($res,true);
+    $fields_string = rtrim($fields_string, '&');
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, 'https://www.google.com/recaptcha/api/siteverify');
+    curl_setopt($ch, CURLOPT_POST, count($fields));
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $fields_string);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, True);
+    $res = curl_exec($ch);
+    curl_close($ch);
+    return json_decode($res, true);
 }
 
 $result = CheckCaptcha($_POST['g-recaptcha-response']);
 
-if($result['success']){
+if ($result['success']) {
     // Import PHPMailer classes into the global namespace
     // These must be at the top of your script, not inside a function
     require 'PHPMailer.php';
@@ -56,24 +57,25 @@ if($result['success']){
         //Content
         $mail->isHTML(true);                                  // Set email format to HTML
         $mail->Subject = $Subject;
-        $mail->Body    = $Message;
+        $mail->Body = $Message;
 
         $mail->send();
-        echo "<script>alert('Send Successfully!')</script>";
         readfile("contact.html");
+        echo "<script>alert('Send Successfully!')</script>";
 //           echo 'Message has been sent';
     } catch (Exception $e) {
         echo "<script>alert('Message could not be sent. Please try again')</script>";
         readfile("contact.html");
     }
-}else{
+} else {
     echo "<script>alert('Captcha failed. Please try again')</script>";
     reload($Name, $Email, $Subject, $Message);
 }
 
 //reload function is for the situation that g-recaptcha failed
 //this function can remain the inputs from user, so that when the page is reload, the inputs in the form will remain
-function reload($Name, $Email, $Subject, $Message){
+function reload($Name, $Email, $Subject, $Message)
+{
     echo "
     <html lang='en'>
     <head>
@@ -91,15 +93,15 @@ function reload($Name, $Email, $Subject, $Message){
         <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
         <!-- /.bootstrap -->
         <!-- css reference -->
-        <link rel='stylesheet' href='../../Desktop/IP%20program/AcuteSoftwareEngineering/css/navbar.css'>
-        <link rel='stylesheet' href='../../Desktop/IP%20program/AcuteSoftwareEngineering/css/contact.css'>
-        <link rel='stylesheet' href='../../Desktop/IP%20program/AcuteSoftwareEngineering/css/foot.css'>
+        <link rel='stylesheet' href='css/navbar.css'>
+        <link rel='stylesheet' href='css/contact.css'>
+        <link rel='stylesheet' href='css/foot.css'>
         <!-- /.css -->
         <!-- Logo in website tab/bookmark -->
         <link rel='stylesheet prefetch' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
-        <link rel='bookmark' type='image/x-icon' href='../../Desktop/IP%20program/AcuteSoftwareEngineering/images/favicon.ico'/>
-        <link rel='shortcut icon' href='../../Desktop/IP%20program/AcuteSoftwareEngineering/images/favicon.ico'>
-        <link rel='icon' href='../../Desktop/IP%20program/AcuteSoftwareEngineering/images/favicon.ico'>
+        <link rel='bookmark' type='image/x-icon' href='images/favicon.ico'/>
+        <link rel='shortcut icon' href='images/favicon.ico'>
+        <link rel='icon' href='images/favicon.ico'>
         <!-- /.Logo -->
         <!-- 'I am not a robot' recaptcha -->
         <script src='https://www.google.com/recaptcha/api.js'></script>
@@ -119,7 +121,7 @@ function reload($Name, $Email, $Subject, $Message){
                     <span class='icon-bar'></span>
                     <span class='icon-bar'></span>
                 </button>
-                <a href='../../Desktop/IP%20program/AcuteSoftwareEngineering/home.html'>
+                <a href='home.html'>
                     <div class='topnav navbar-brand'>
                     </div>
                 </a>
@@ -128,13 +130,13 @@ function reload($Name, $Email, $Subject, $Message){
             <div class='collapse navbar-collapse' id='target-menu'>
                 <ul class='nav navbar-nav navbar-right'>
                     <li>
-                        <a href='../../Desktop/IP%20program/AcuteSoftwareEngineering/home.html'>Home</a>
+                        <a href='home.html'>Home</a>
                     </li>
                     <li>
-                        <a href='../../Desktop/IP%20program/AcuteSoftwareEngineering/company.html'>Company</a>
+                        <a href='company.html'>Company</a>
                     </li>
                     <li class='active'>
-                        <a href='../../Desktop/IP%20program/AcuteSoftwareEngineering/contact.html'>Contact</a>
+                        <a href='contact.html'>Contact</a>
                     </li>
                 </ul>
             </div>
@@ -147,7 +149,7 @@ function reload($Name, $Email, $Subject, $Message){
     
     <!-- picture front contact message form-->
     <div>
-        <img class='picture-area' src='../../Desktop/IP%20program/AcuteSoftwareEngineering/images/contact.png'>
+        <img class='picture-area' src='images/contact.png'>
     </div>
     <!-- /.picture -->
     
@@ -167,7 +169,7 @@ function reload($Name, $Email, $Subject, $Message){
             <div class='row'>
                 <div class='col'>
                     <input type='text' placeholder='Name*:' name='name' pattern='^([a-zA-Z]+[,.]?[ ]?|[a-zA-Z]+['-]?)+$'
-                           title='Firstname and lastname should only contain letters. e.g. John Smith' value='" .$Name."' required>
+                           title='Firstname and lastname should only contain letters. e.g. John Smith' value='" . $Name . "' required>
                 </div>
             </div>
             <!-- /.Name filling area -->
@@ -176,14 +178,14 @@ function reload($Name, $Email, $Subject, $Message){
                 <div class='col'>
                     <input type='text' placeholder='Email address*: ' name='email'
                            pattern='^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,8})$'
-                           title='Email should follow certain format. e.g. someone@example.com' value='".$Email."' required>
+                           title='Email should follow certain format. e.g. someone@example.com' value='" . $Email . "' required>
                 </div>
             </div>
             <!-- /.Email filling area -->
             <!-- Email subject filling area. Must be filled -->
             <div class='row'>
                 <div class='col'>
-                    <input type='text' id='subject' name='subject' placeholder='Subject*:' value='".$Subject."' required>
+                    <input type='text' id='subject' name='subject' placeholder='Subject*:' value='" . $Subject . "' required>
                 </div>
             </div>
             <!-- /.Email subject filling area -->
@@ -191,7 +193,7 @@ function reload($Name, $Email, $Subject, $Message){
             <div class='row'>
                 <div class='col'>
                     <textarea id='message' name='message' placeholder='Write message:' style='height:200px'
-                              required>".$Message . "</textarea>
+                              required>" . $Message . "</textarea>
                 </div>
             </div>
             <!-- /.Email message filling area -->
@@ -220,7 +222,7 @@ function reload($Name, $Email, $Subject, $Message){
                 <div class='row'>
                     <!-- Display three elements equally. Later if there are more elements in footer, 'col-md-x' can be adjusted.-->
                     <div class='col-md-4 col-sm-4 col-xs-4'>
-                        <a href='../../Desktop/IP%20program/AcuteSoftwareEngineering/about.html'><span class='ion-android-pin'> </span> About</a>
+                        <a href='about.html'><span class='ion-android-pin'> </span> About</a>
                     </div>
                     <div class='col-md-4 col-sm-4 col-xs-4'>
                         <a><span class='ion-social-twitter'> </span> Twitter</a>
